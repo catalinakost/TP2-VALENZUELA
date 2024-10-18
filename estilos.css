@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: beige; 
+    color: #150752;
+    font-family: "Raleway", sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3em;
+}
+
+h2 {
+    text-align: left;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2em;
+}
+
+p {
+    text-align: left;
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 20px; /* Espacio entre párrafos */
+}
+
+nav .center-button {
+    text-align: center; /* Centra el contenido dentro del div */
+    margin: 20px 0; /* Espacio arriba y abajo del botón */
+}
+
+nav a {
+    display: inline-block; /* Permite que el margen funcione correctamente */
+    text-transform: uppercase;
+    color: #d02525; 
+    text-decoration: none;
+    padding: 10px 20px; /* Espacio dentro del botón */
+    border: 2px solid #d02525; /* Borde al botón */
+    border-radius: 5px; /* Redondear esquinas */
+}
+
+.imagenes {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.imagenes img {
+    width: 28%; /* Ajusta el ancho de las imágenes para evitar scroll */
+    border: 3px solid #150752;
+    transition: transform 0.3s ease, border-radius 0.3s ease;
+}
+
+.imagenes img:hover {
+    transform: scale(1.05);
+    border-radius: 10px;
+}
+
+.main-image {
+    display: block;
+    margin: 20px auto 0; /* Espacio superior ajustado */
+    width: 80%; /* O cualquier tamaño que desees */
+    border: 3px solid #150752;
+}
+
+.small-image {
+    width: 60%; /* Ajusta este valor según lo que desees */
+    margin: 0 auto; /* Centra la imagen */
+    border: 3px solid #150752;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+}
+
+main,
+header {
+    width: 83.33%;
+
+}
+
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    p {
+        font-size: 0.9em;
+    }
+    .imagenes img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
